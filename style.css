@@ -42,13 +42,12 @@ body {
 }
 
 a {
-  text-decoration: non;
+  text-decoration: none;
   color: inherit;
   font-family: inherit;
 }
 
-.btn {
-  
+.btn {  
   border: 0;
   display: block;
   outline: 0;
