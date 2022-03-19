@@ -1,0 +1,159 @@
+:root {
+  /* Primary */
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  /* Neutral */
+
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem;
+  align-items: center;
+  font-family: 'Karla', sans-serif;
+}
+
+.price-component {
+  display: grid;
+  max-width: 350px;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+/* general styling */
+.intro h2,
+.faq p {
+  margin: 1.3rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: inherit;
+  border: 0;
+  display: block;
+  outline: 0;
+  color: #fff;
+  background-color: var(--bright-yellow);
+  font-weight: 400;
+  cursor: pointer;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: hsl(71, 85%, 36%);
+}
+
+/* main content */
+.content {
+  padding: 2rem 1.3rem;
+}
+
+.content > h1,
+.content h2 {
+  font-weight: 700;
+}
+
+.content > h1 {
+  font-size: 1.3rem;
+}
+
+.content p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* header text size */
+.content h2 {
+  font-size: 1.1rem;
+}
+
+/* intro */
+.intro {
+  background: #fff;
+}
+
+.intro h1 {
+  color: var(--cyan);
+}
+
+.intro h2 {
+  color: var(--bright-yellow);
+  line-height: 1;
+}
+
+.intro p {
+  color: var(--grayish-blue);
+}
+
+/* pricing component */
+.subscription {
+  background-color: var(--cyan);
+  color: #fff;
+}
+
+.pricing {
+  margin: 0.7rem 0;
+}
+
+.pricing span {
+  font-size: 2rem;
+  margin-right: 0.6rem;
+}
+
+.price-plan {
+  display: flex;
+  align-items: center;
+}
+
+.price-plan p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.432);
+}
+
+.faq {
+  background-color: rgba(14, 194, 191, 0.801);
+  color: var(--light-gray);
+}
+
+@media screen and (min-width: 800px) {
+  .price-component {
+    max-width: none;
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    grid-template-rows: auto;
+  }
+
+  .content {
+    padding: 2rem;
+  }
+
+  .intro {
+    grid-column: 1 / span 2;
+  }
+
+  .intro h2 {
+    margin-bottom: 0.6rem;
+  }
+}
