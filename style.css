@@ -46,6 +46,11 @@ body {
   margin: 1.3rem 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .btn {  
   border: 0;
   display: block;
