@@ -42,11 +42,13 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: non;
+  color: inherit;
+  font-family: inherit;
 }
 
 .btn {
-  font-family: inherit;
+  
   border: 0;
   display: block;
   outline: 0;
