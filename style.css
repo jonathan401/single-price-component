@@ -135,11 +135,11 @@ a {
 
 .price-plan p {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.432);
+  color: rgb(98, 212, 213);
 }
 
 .faq {
-  background-color: rgba(14, 194, 191, 0.801);
+  background-color: rgb(74, 190, 189);
   color: var(--light-gray);
 }
 
