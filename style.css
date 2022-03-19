@@ -57,6 +57,7 @@ a {
   font-family: inherit;
   outline: 0;
   color: #fff;
+  text-align: center;
   background-color: var(--bright-yellow);
   font-weight: 400;
   cursor: pointer;
